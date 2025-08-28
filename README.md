@@ -111,9 +111,7 @@ Content-Type: application/json
 }
 
 ```bash
-curl -s -X POST http://localhost:8080/invoices \
-  -H "Content-Type: application/json" \
-  -d '{"amount":199.99,"due_date":"2025-09-11"}'
+curl -s -X POST http://localhost:8080/invoices -H "Content-Type: application/json" -d '{"amount":199.99,"due_date":"2025-09-11"}'
 ```
 
 **Response**
@@ -169,9 +167,7 @@ Content-Type: application/json
 }
 
   ```bash
-  curl -i -X POST http://localhost:8080/invoices/{id}/payments \
-  -H "Content-Type: application/json" \
-  -d '{"amount":159.99}'
+  curl -i -X POST http://localhost:8080/invoices/{id}/payments -H "Content-Type: application/json" -d '{"amount":159.99}'
   ```
 
 
