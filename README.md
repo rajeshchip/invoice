@@ -6,13 +6,13 @@ This project implements a simple Invoice Management System using Spring Boot.
 
 It provides APIs to:
 
-  	 Create invoices
+  •	Create invoices
 
-  	 Retrieve invoices
+  •	Retrieve invoices
 
-  	 Apply payments
+  •	Apply payments
 
-  	 Process overdue invoices with late fees
+  •	Process overdue invoices with late fees
 
 This interim delivery includes:
 
