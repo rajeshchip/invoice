@@ -1,6 +1,6 @@
-#📘 Invoice Management System (Spring Boot)
+# 📘 Invoice Management System (Spring Boot)
 
-##📌 Overview
+## 📌 Overview
 
 This project implements a simple Invoice Management System using Spring Boot.
 
@@ -28,7 +28,7 @@ This interim delivery includes:
 🚀 Final submission will additionally include JUnit test coverage and Docker Compose setup.
 
 
-##⚙️ Tech Stack
+## ⚙️ Tech Stack
 
 Java 17
 
