@@ -82,7 +82,7 @@ README.md
 Build the project:
    ```bash
    mvn clean package
-
+   ```
 
 ## 🔗 API Endpoints
 
