@@ -79,10 +79,16 @@ README.md
 
 
 ## How to Run
-Build the project:
-   ```bash
-   mvn clean package
-   ```
+1. Build the project:
+     ```bash
+     mvn clean package
+     ```
+2. Run with Docker Compose:
+      ```bash
+      docker compose up --build
+      ```
+
+**The service will be available at: http://localhost:8080**
 
 ## 🔗 API Endpoints
 
@@ -104,6 +110,10 @@ Content-Type: application/json
 
 }
 
+curl -s -X POST http://localhost:8080/invoices \
+  -H "Content-Type: application/json" \
+  -d '{"amount":199.99,"due_date":"2025-09-11"}'
+
 
 **Response**
 
@@ -117,6 +127,7 @@ Content-Type: application/json
 
 GET /invoices
 
+curl -s http://localhost:8080/invoices
 
 **Response**
 
@@ -154,6 +165,11 @@ Content-Type: application/json
   
 }
 
+curl -i -X POST http://localhost:8080/invoices/{id}/payments \
+  -H "Content-Type: application/json" \
+  -d '{"amount":159.99}'
+
+
 
 **Response**
 
@@ -188,6 +204,10 @@ Content-Type: application/json
   "overdue_days": 10
   
 }
+
+curl -s -X POST http://localhost:8080/invoices/process-overdue \
+  -H "Content-Type: application/json" \
+  -d '{"late_fee":10.5,"overdue_days":10}'
 
 
 
