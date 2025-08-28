@@ -25,9 +25,6 @@ This delivery includes:
 ✅ Clean modular design (Domain, Repository, Service, Controller layers)
 
 
-🚀 Final submission will additionally include JUnit test coverage and Docker Compose setup.
-
-
 ## ⚙️ Tech Stack
 
 Java 17
@@ -242,6 +239,3 @@ Content-Type: application/json
 ## 🔜 Next Steps (Final Delivery)
 
 
-Add JUnit test coverage for Service & Controller layers
-
-Add Docker Compose setup (API + DB orchestration)
