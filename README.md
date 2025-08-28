@@ -1,15 +1,12 @@
-📘 Invoice Management System (Spring Boot)
-📌 Overview
+#📘 Invoice Management System (Spring Boot)
+##📌 Overview
 
 This project implements a simple Invoice Management System using Spring Boot.
 It provides APIs to:
 
 Create invoices
-
 Retrieve invoices
-
 Apply payments
-
 Process overdue invoices with late fees
 
 This interim delivery includes:
@@ -20,7 +17,7 @@ This interim delivery includes:
 
 🚀 Final submission will additionally include JUnit test coverage and Docker Compose setup.
 
-⚙️ Tech Stack
+##⚙️ Tech Stack
 
 Java 17
 Spring Boot 3.x
@@ -47,7 +44,7 @@ src/test/java/com/example/invoice/
 pom.xml
 README.md
 
-🔗 API Endpoints
+##🔗 API Endpoints
 
 Base URL: http://localhost:8080
 
