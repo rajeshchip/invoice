@@ -1,3 +1,8 @@
+/**
+ * Author: Rajesh Sukendiramani
+ * Date: 28th Aug 2025
+ * Change Description: As part of Demonstration of Invoice Application
+ */
 package com.example.invoice.config;
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;

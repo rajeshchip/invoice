@@ -1,0 +1,18 @@
+#version: '3.9'
+
+services:
+  invoice-app:
+    build: .
+    container_name: invoice-app
+    ports:
+      - "8080:8080"
+    volumes:
+      - invoice-data:/app/data
+    environment:
+      # Optional: you can override Spring Boot properties here
+      SPRING_DATASOURCE_URL: jdbc:h2:file:/app/data/invoice-db;DB_CLOSE_DELAY=-1;AUTO_RECONNECT=TRUE
+      SPRING_DATASOURCE_USERNAME: sa
+      SPRING_DATASOURCE_PASSWORD: password
+
+volumes:
+  invoice-data:

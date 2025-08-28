@@ -1,3 +1,9 @@
+/**
+ * Author: Rajesh Sukendiramani
+ * Date: 28th Aug 2025
+ * Change Description: As part of Demonstration of Invoice Application
+ */
+
 package com.example.invoice.service;
 
 import java.math.BigDecimal;
@@ -13,6 +19,13 @@ import com.example.invoice.domain.Invoice;
 import com.example.invoice.repo.InvoiceRepository;
 
 
+/**
+ * This class contains business logic of all the APIs exposed
+ * 1. Create Invoice
+ * 2. List All Invoices
+ * 3. Post Payment
+ * 4. Process OverDue Invoices
+ */
 
 @Service
 public class InvoiceService {

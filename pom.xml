@@ -75,10 +75,30 @@
 
 	<build>
 		<plugins>
+			<!-- Spring Boot plugin -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			
+			<!-- Fabric8 plugin for DockerImage creation-->
+			<plugin>
+			  <groupId>io.fabric8</groupId>
+			  <artifactId>docker-maven-plugin</artifactId>
+			  <version>0.43.4</version>
+			  <configuration>
+			    <images>
+			      <image>
+			        <name>invoice-app</name>
+			        <build>
+			          <dockerFile>${project.basedir}/Dockerfile</dockerFile>
+			        </build>
+			      </image>
+			    </images>
+			  </configuration>
+			</plugin>
+
+			
 		</plugins>
 	</build>
 

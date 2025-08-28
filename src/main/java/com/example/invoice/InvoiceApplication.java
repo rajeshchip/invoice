@@ -1,3 +1,8 @@
+/**
+ * Author: Rajesh Sukendiramani
+ * Date: 28th Aug 2025
+ * Change Description: As part of Demonstration of Invoice Application
+ */
 package com.example.invoice;
 
 import org.springframework.boot.SpringApplication;
@@ -10,11 +15,6 @@ public class InvoiceApplication {
 		SpringApplication.run(InvoiceApplication.class, args);
 	}
 	
-	// Swap this Bean to a JPA repository later without changing service/controller
-/*    @Bean
-    public InvoiceRepository invoiceRepository() {
-        return new InMemoryInvoiceRepository();
-    }*/
 
 
 }

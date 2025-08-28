@@ -1,3 +1,8 @@
+/**
+ * Author: Rajesh Sukendiramani
+ * Date: 28th Aug 2025
+ * Change Description: As part of Demonstration of Invoice Application
+ */
 package com.example.invoice.domain;
 
 import java.math.BigDecimal;
@@ -6,6 +11,16 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 import jakarta.persistence.*;
+
+/** Domain Class to represent table 'INVOICE'
+ *  Columns: 
+ *  	ID : Auto Generated Number
+ *  	INV_AMOUNT : Invoice Amount (It won't be changed after creation)
+ *  	PAID_AMOUNT : Received payment amount for this invoice (Whenever payment is received, it'll be incremented with payment amount
+ *  	DUE_DATE : Due Date of the Invoice
+ *  	STATUS : Enumerated values of PENDING, PAID, VOID*  	
+ * 
+ */
 
 @Entity
 @Table(name = "invoice")
@@ -103,7 +118,7 @@ public class Invoice {
         } else if (paidAmount.signum() == 0) { // not paid at all
             this.status = InvoiceStatus.VOID;
             newAmount = invAmount.add(lateFee);
-        } else { // fully paid, shouldn't be here because pending & overdue implies remaining > 0
+    } else { // fully paid, shouldn't be here because pending & overdue implies remaining > 0
             return null;
         }
 
