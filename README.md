@@ -14,9 +14,9 @@ It provides APIs to:
 
   •	Process overdue invoices with late fees
 
-This interim delivery includes:
+This delivery includes:
 
-✅ Full CRUD flows (Invoice, Payment, Overdue Processing)
+✅ Complete flows (Invoice, Payment, Overdue Processing)
 
 ✅ Persistence using H2 (file-based DB)
 
@@ -75,6 +75,13 @@ src/test/java/com/example/invoice/
 pom.xml
 
 README.md
+
+
+
+## How to Run
+Build the project:
+   ```bash
+   mvn clean package
 
 
 ## 🔗 API Endpoints
