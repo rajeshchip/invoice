@@ -110,9 +110,6 @@ Content-Type: application/json
 
 }
 
-```bash
-curl -s -X POST http://localhost:8080/invoices -H "Content-Type: application/json" -d '{"amount":199.99,"due_date":"2025-09-11"}'
-```
 
 **Response**
 
@@ -126,9 +123,6 @@ curl -s -X POST http://localhost:8080/invoices -H "Content-Type: application/jso
 
 GET /invoices
 
-```bash
-curl -s http://localhost:8080/invoices
-```
 
 **Response**
 
@@ -166,9 +160,6 @@ Content-Type: application/json
   
 }
 
-  ```bash
-  curl -i -X POST http://localhost:8080/invoices/{id}/payments -H "Content-Type: application/json" -d '{"amount":159.99}'
-  ```
 
 
 **Response**
@@ -204,12 +195,6 @@ Content-Type: application/json
   "overdue_days": 10
   
 }
-
-```bash
-curl -s -X POST http://localhost:8080/invoices/process-overdue \
-  -H "Content-Type: application/json" \
-  -d '{"late_fee":10.5,"overdue_days":10}'
-```
 
 
 **Response**
